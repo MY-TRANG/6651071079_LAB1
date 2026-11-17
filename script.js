@@ -6,7 +6,7 @@ const books = [
     author: "Paulo Coelho",
     category: "Văn học",
     price: 79000,
-    coverImage: "nhagiakim.jpg",
+    coverImage: "assets/nhagiakim.jpg",
     description:
       "Nhà giả kim (Paulo Coelho) kể về hành trình của chàng chăn cừu Santiago rời bỏ quê hương Tây Ban Nha để băng qua sa mạc tìm kiếm kho báu bí ẩn vùng Kim Tự Tháp theo lời mách bảo của những giấc mơ."
   },
@@ -16,7 +16,7 @@ const books = [
     author: "Morgan Housel",
     category: "Kinh tế",
     price: 145000,
-    coverImage: "tamlyhoc.webp",
+    coverImage: "assets/tamlyhoc.webp",
     description:
       "Tâm lý học về tiền (Morgan Housel) lý giải một sự thật bất ngờ rằng thành công tài chính không phụ thuộc vào trí thông minh hay các công thức phức tạp, mà được quyết định bởi chính cảm xúc và hành vi của mỗi người."
   },
@@ -26,7 +26,7 @@ const books = [
     author: "Dale Carnegie",
     category: "Kỹ năng",
     price: 86000,
-    coverImage: "dacnhantam.jpg",
+    coverImage: "assets/dacnhantam.jpg",
     description:
       "Đắc Nhân Tâm (Dale Carnegie) là cuốn sách kinh điển mọi thời đại về nghệ thuật giao tiếp và ứng xử, giúp bạn khám phá bí quyết thấu hiểu tâm lý để chinh phục trái tim người đối diện.\nVới những nguyên tắc thực tế, sâu sắc và đầy nhân văn, đây chính là cuốn cẩm nang gối đầu giường không thể thiếu giúp bạn mở rộng các mối quan hệ và chạm tới thành công bền vững."
   },
@@ -36,7 +36,7 @@ const books = [
     author: "Robert C. Martin",
     category: "Công nghệ",
     price: 320000,
-    coverImage: "cleancode.jpg",
+    coverImage: "assets/cleancode.jpg",
     description:
       "Clean Code - Mã Sạch (Robert C. Martin) là cuốn cẩm nang kinh điển giúp lập trình viên khám phá nghệ thuật viết mã nguồn tinh gọn, rõ ràng và dễ bảo trì thay vì những dòng code rối rắm.\nVới những nguyên tắc thực chiến và tư duy chuẩn mực, đây chính là cuốn sách gối đầu giường không thể thiếu giúp bạn nâng tầm kỹ năng để trở thành một kỹ sư phần mềm chuyên nghiệp."
   },
@@ -46,7 +46,7 @@ const books = [
     author: "Rosie Nguyễn",
     category: "Kỹ năng",
     price: 90000,
-    coverImage: "tuoitre.jpg",
+    coverImage: "assets/tuoitre.jpg",
     description:
     "Tuổi Trẻ Đáng Giá Bao Nhiêu (Rosie Nguyễn) là người bạn đồng hành đầy tâm huyết, giúp người trẻ tìm thấy định hướng cho hành trình học hỏi, làm việc và khám phá bản thân giữa những chênh vênh đầu đời.\nVới giọng văn gần gũi, chân thành và giàu trải nghiệm, cuốn sách bán chạy này sẽ tiếp thêm động lực để bạn dũng cảm bước ra khỏi vùng an toàn và sống trọn vẹn những năm tháng rực rỡ nhất."
   },
@@ -56,7 +56,7 @@ const books = [
     author: "Vũ Trọng Phụng",
     category: "Văn học",
     price: 68000,
-    coverImage: "sodo.jpg",
+    coverImage: "assets/sodo.jpg",
     description:
       "Số đỏ là kiệt tác trào phúng đỉnh cao của Vũ Trọng Phụng, theo chân Xuân Tóc Đỏ, từ một kẻ lưu manh đường phố bất ngờ bước chân vào giới thượng lưu Hà Nội những năm 1930 nhờ những cơ duyên đầy trớ trêu."
   },
@@ -66,7 +66,7 @@ const books = [
     author: "Eric Ries",
     category: "Kinh tế",
     price: 165000,
-    coverImage: "khoinghiep.jpg",
+    coverImage: "assets/khoinghiep.jpg",
     description:
       "Khởi Nghiệp Tinh Gọn (Eric Ries) mang đến phương pháp luận đột phá giúp các nhà sáng lập biến ý tưởng thành sản phẩm thực tế thông qua chu trình thử nghiệm nhanh, đo lường chính xác và hạn chế tối đa rủi ro lãng phí nguồn lực."
   },
@@ -76,7 +76,7 @@ const books = [
     author: "Tô Oai Hùng",
     category: "Công nghệ",
     price: 210000,
-    coverImage: "laptrinhweb.jpg",
+    coverImage: "assets/laptrinhweb.jpg",
     description:
       "Lập Trình Web Hiện Đại trang bị trọn bộ kiến thức từ nền tảng cốt lõi đến các công nghệ và tư duy phát triển web tiên tiến, giúp bạn tự tin xây dựng những ứng dụng mượt mà, chuẩn mực và tối ưu trải nghiệm người dùng.\nVới lộ trình bài bản cùng hệ thống ví dụ thực tế sinh động, đây chính là cuốn cẩm nang thực chiến không thể thiếu giúp bạn làm chủ công nghệ và bứt phá sự nghiệp lập trình."
   },
@@ -86,7 +86,7 @@ const books = [
     author: "Nguyễn Nhật Ánh",
     category: "Văn học",
     price: 125000,
-    coverImage: "macbiec.jpg",
+    coverImage: "assets/macbiec.jpg",
     description:
       "Mắt biếc là bản tình ca đầy hoài niệm đưa bạn trở về làng quê Đo Đo yên bình, nơi bắt đầu mối tình đơn phương vừa trong trẻo, vừa day dứt của Ngạn dành cho cô bạn thuở nhỏ Hà Lan.\nQua ngòi bút tinh tế và đượm buồn của Nguyễn Nhật Ánh, cuốn sách khắc họa trọn vẹn vẻ đẹp của tuổi trẻ, sự thủy chung và những ngã rẽ đầu đời khiến bất cứ ai từng yêu cũng thấy lòng mình rung động."
   },
@@ -96,7 +96,7 @@ const books = [
     author: "Antoine de Saint-Exupéry",
     category: "Văn học",
     price: 120000,
-    coverImage: "hoangtube.jpg",
+    coverImage: "assets/hoangtube.jpg",
     description:
       "Hoàng Tử Bé (Antoine de Saint-Exupéry) kể về cuộc gặp gỡ kỳ diệu giữa một chàng phi công lạc giữa sa mạc Sahara và cậu hoàng tử nhỏ đến từ tiểu hành tinh B612 xa xôi.\nTựa như một câu chuyện cổ tích dành cho người lớn, kiệt tác kinh điển vượt thời gian này sẽ chạm đến trái tim bạn bằng những bài học thuần khiết, sâu lắng về tình yêu, tình bạn và cách nhìn thế giới bằng cả tâm hồn."
   },
@@ -106,7 +106,7 @@ const books = [
     author: "Cao Minh",
     category:"Tâm lý Học",
     price: 115000,
-    coverImage: "thientai.webp",
+    coverImage: "assets/thientai.webp",
     description:
     "Thiên Tài Bên Trái, Kẻ Điên Bên Phải (Cao Minh) mở ra cánh cửa bước vào thế giới nội tâm đầy bí ẩn thông qua những cuộc đối thoại chân thực với các bệnh nhân tâm thần và những người mang góc nhìn khác biệt về vũ trụ, nhân sinh.\nCuốn sách tâm lý học độc đáo này sẽ phá vỡ mọi giới hạn tư duy thông thường, cuốn hút bạn vào hành trình khám phá ranh giới mong manh đầy mê hoặc giữa sự tỉnh táo và điên rồ."
   },
@@ -116,7 +116,7 @@ const books = [
     author: "José Mauro de Vasconcelos",
     category:"Văn học",
     price: 95000,
-    coverImage: "caycamngot.webp",
+    coverImage: "assets/caycamngot.webp",
     description:
     "Cây Cam Ngọt Của Tôi (José Mauro de Vasconcelos) mở ra thế giới tuổi thơ vừa hồn nhiên, tinh nghịch, vừa chất chứa những nỗi niềm sâu kín của cậu bé Zezé nghèo khó nhưng giàu trí tưởng tượng.\nTựa như một khúc ca dịu dàng và đầy nhân văn, cuốn tiểu thuyết kinh điển này sẽ chạm đến những góc khuất mềm yếu nhất trong trái tim bạn, để lại dư âm ấm áp về tình yêu thương và sự đồng cảm."
   },
