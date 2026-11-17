@@ -117,7 +117,7 @@ body {
 .hero {
   background:
     linear-gradient(rgba(15, 23, 42, 0.48), rgba(15, 23, 42, 0.48)),
-    url("khonggian.jpg") center / cover no-repeat;
+    url("assets/khonggian.jpg") center / cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 64px 20px;
