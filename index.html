@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhà Sách Tri Thức - Cửa Hàng Sách Trực Tuyến</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Thanh điều hướng -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo" aria-label="Tri Thức Books">
+        <img src="assets/logo.jpg" alt="Tri Thức Books" />
+      </a>
 
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm tên sách hoặc tác giả..."
+          aria-label="Tìm kiếm sách"
+        />
+      </div>
+
+      <button id="cart-btn" class="cart-btn" aria-label="Mở giỏ hàng">
+        🛒 Giỏ hàng <span id="cart-count" class="badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner giới thiệu -->
+  <section class="hero">
+    <div class="container">
+      <h1>Khám Phá Thế Giới Qua Từng Trang Sách</h1>
+      <p>Tuyển chọn những đầu sách hay nhất về văn học, kinh tế, kỹ năng và công nghệ.</p>
+      <a href="#catalog" class="btn-primary">Khám phá ngay</a>
+    </div>
+  </section>
+
+  <!-- Danh mục & Danh sách sản phẩm -->
+  <main id="catalog" class="container main-content">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">Tất cả</button>
+      <button class="filter-btn" data-category="Văn học">Văn học</button>
+      <button class="filter-btn" data-category="Kinh tế">Kinh tế</button>
+      <button class="filter-btn" data-category="Kỹ năng">Kỹ năng sống</button>
+      <button class="filter-btn" data-category="Công nghệ">Công nghệ</button>
+      <button class="filter-btn" data-category="Tâm lý Học">Tâm lý Học</button>
+    </div>
+
+    <div id="book-list" class="book-grid">
+      <!-- Danh sách sách sẽ được render tự động bằng JavaScript -->
+    </div>
+  </main>
+
+  <section class="brand-story" aria-labelledby="brand-story-title">
+    <div class="container brand-story-content">
+      <img
+        class="brand-story-image"
+        src="assets/khonggian.jpg"
+        alt="Không gian đọc sách tại nhà sách"
+      />
+      <div class="brand-story-copy">
+        <p class="brand-story-label">Câu chuyện thương hiệu</p>
+        <h2 id="brand-story-title">Mỗi cuốn sách mở ra một hành trình</h2>
+        <p>
+          Tri Thức Books được tạo nên từ tình yêu dành cho sách và mong muốn giúp
+          việc tìm một cuốn sách phù hợp trở nên gần gũi, dễ dàng hơn. Chúng tôi
+          tin rằng mỗi trang sách có thể khơi gợi một ý tưởng mới, tiếp thêm cảm
+          hứng và đồng hành cùng bạn trên hành trình học hỏi mỗi ngày.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal xem chi tiết sách -->
+  <div id="book-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-modal" class="close-btn" aria-label="Đóng">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Modal nhập thông tin đặt hàng -->
+  <div id="checkout-modal" class="modal" aria-hidden="true">
+    <div class="modal-content checkout-modal-content">
+      <button id="close-checkout" class="close-btn" aria-label="Đóng">&times;</button>
+      <h2 class="checkout-title">Thông Tin Đặt Hàng</h2>
+      <div id="checkout-summary" class="checkout-summary"></div>
+      <form id="checkout-form" class="checkout-form">
+        <div class="form-field">
+          <label for="customer-name">Họ và tên</label>
+          <input id="customer-name" name="customerName" type="text" autocomplete="name" required />
+        </div>
+        <div class="form-field">
+          <label for="customer-phone">Số điện thoại</label>
+          <input id="customer-phone" name="phone" type="tel" autocomplete="tel" required />
+        </div>
+        <div class="form-field">
+          <label for="customer-email">Email (không bắt buộc)</label>
+          <input id="customer-email" name="email" type="email" autocomplete="email" />
+        </div>
+        <div class="form-field">
+          <label for="customer-address">Địa chỉ nhận hàng</label>
+          <textarea id="customer-address" name="address" rows="3" autocomplete="street-address" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Xác Nhận Đặt Hàng</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Thanh trượt giỏ hàng -->
+  <div id="cart-overlay" class="overlay"></div>
+  <aside id="cart-sidebar" class="cart-sidebar" aria-label="Giỏ hàng của bạn">
+    <div class="cart-header">
+      <h2>Giỏ Hàng Của Bạn</h2>
+      <button id="close-cart" class="close-btn" aria-label="Đóng giỏ hàng">&times;</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <!-- Sản phẩm trong giỏ sẽ hiển thị ở đây -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Tổng cộng:</span>
+        <strong id="cart-total">0 ₫</strong>
+      </div>
+      <button id="checkout-btn" class="btn-primary full-width">Thanh Toán</button>
+    </div>
+  </aside>
+
+  <!-- Thông báo nhanh (Toast) -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Chân trang -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Tri Thức Books. Giao hàng toàn quốc - Đổi trả trong 7 ngày.</p>
+      <p>Liên hệ: 0356093733 | Email: 6651071079@st.utc2.edu.vn</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
